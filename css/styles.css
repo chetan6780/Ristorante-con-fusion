@@ -64,7 +64,6 @@ body {
     bottom: 0px;
     z-index: 1;
 }
-
 .modal-header {
     background-color: #512da8;
     color: floralwhite;
@@ -72,7 +71,6 @@ body {
 .modal-header button {
     color: floralwhite;
 }
-
 .modal-body {
     background-color: #d1c4e9;
 }
