@@ -1,1 +1,3 @@
 node_modules
+dist
+npm install --save-dev usemin-cli cssmin uglifyjs htmlmin
