@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <!-- NAVBAR -->
     <nav class="navbar navbar-dark navbar-expand-sm bg-primary fixed-top">
         <div class="container">
             <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" height="30" width="41"></a>
@@ -40,7 +41,97 @@
             </div>
         </div>
     </nav>
+    <!-- NAVBAR END -->
 
+    <!-- RESERVE MODEL -->
+    <div id="reserveModel" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Reserve a Table</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form action="submit" class="form">
+                        <div class="form-row">
+                            <div class="form-group col-12 col-md-2">
+                                Number of Guests
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio1" value="1table">
+                                    <label class="form-check-label" for="inlineRadio1">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio2" value="2tables">
+                                    <label class="form-check-label" for="inlineRadio2">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio3" value="3tables">
+                                    <label class="form-check-label" for="inlineRadio3">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio4" value="4tables">
+                                    <label class="form-check-label" for="inlineRadio4">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio5" value="5tables">
+                                    <label class="form-check-label" for="inlineRadio5">5</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio6" value="6tables">
+                                    <label class="form-check-label" for="inlineRadio6">6</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-12 col-md-2">Section</div>
+                            <div class="form-group">
+                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-success active">
+                                        <input type="radio" name="sectionOption" id="non-smoking" autocomplete="off"
+                                            checked>
+                                        Non-smoking
+                                    </label>
+                                    <label class="btn btn-danger">
+                                        <input type="radio" name="sectionOption" id="smoking" autocomplete="off">Smoking
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-12 col-md-2">Date and Time</div>
+                            <div class="col-12 col-md-3">
+                                <input type="date" class="form-control" id="date" placeholder="Date">
+                            </div>
+                            <div class="form-group col-12 col-md-3">
+                                <input type="time" class="form-control" id="time" placeholder="Time">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group offset-2">
+                                <button type="button" class="btn btn-secondary btn-sm"
+                                    data-dismiss="modal">Cancel</button>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Reserve</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- RESERVE MODEL END -->
+
+    <!-- LOGIN MODEL -->
     <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <!-- Modal content-->
@@ -80,7 +171,9 @@
             </div>
         </div>
     </div>
+    <!-- LOGIN MODEL END -->
 
+    <!-- JUMBOTRON -->
     <header class=jumbotron>
         <div class=container>
             <div class="row row-header">
@@ -93,15 +186,16 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
-                    <a role="button" class="btn btn-block nav-link btn-warning" data-toggle="tooltip" data-html="true"
-                        title="Or Call us at <br><strong>+852 12345678</strong>" data-placement="bottom"
-                        href="#reserveform">Reserve Table</a>
+                    <a class="btn btn-block btn-warning" data-toggle="modal" data-target="#reserveModel">Reserve
+                        Table</a>
                 </div>
             </div>
         </div>
     </header>
+    <!-- JUMBOTRON END -->
 
     <div class="container">
+        <!-- CAROUSEL -->
         <div class="row row-content">
             <div class="col">
                 <div id="mycarousel" class="carousel slide" data-ride="carousel">
@@ -159,8 +253,9 @@
                 </div>
             </div>
         </div>
+        <!-- CAROUSEL END -->
 
-
+        <!-- MAIN CONTENT -->
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 col-md-3 order-sm-last ">
                 <h3>Our Lipsmacking Culinary Creations</h3>
@@ -180,8 +275,6 @@
                 </div>
             </div>
         </div>
-
-
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 col-md-3">
                 <h3>This Month's Promotions</h3>
@@ -202,7 +295,6 @@
                 </div>
             </div>
         </div>
-
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 order-sm-last  col-md-3">
                 <h3>Meet our Culinary Specialists</h3>
@@ -223,8 +315,10 @@
                 </div>
             </div>
         </div>
+        <!-- MAIN CONTENT END -->
 
-        <div class="row row-content">
+        <!-- RESERVE TABLE -->
+        <!-- <div class="row row-content">
             <div class="col-sm-12 col-md-8 offset-md-2">
                 <div class="card" id="reserve">
                     <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
@@ -283,9 +377,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
+        <!-- RESERVE TABLE END -->
     </div>
 
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -334,15 +430,18 @@
             </div>
         </div>
     </footer>
+    <!-- FOOTER END -->
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
         $(document).ready(function () {
-            $('[data-toggle="tooltip"]').tooltip();
+            $('[data-toggle="buttons"]').button('toggle');
         });
     </script>
+
 </body>
 
 </html>
