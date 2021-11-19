@@ -78,3 +78,15 @@ body {
 // Add below 1 line script in package.json
 // "scss": "node-sass -o css/ css/"
 // npm run scss
+
+.modal-header {
+    background-color: $background-dark;
+    color: floralwhite;
+    button {
+        color: floralwhite;
+    }
+}
+
+.modal-body {
+    background-color: $background-pale;
+}
